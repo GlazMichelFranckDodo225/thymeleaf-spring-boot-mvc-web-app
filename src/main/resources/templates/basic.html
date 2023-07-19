@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Basic</title>
 </head>
 <body>
   <div>
-      <h1>Welcome !</h1>
+      <h1>Interpolation</h1>
+      <p>2 + 2 is <strong th:text="${2 + 2}"></strong></p>
+      <p th:text="|15 + 12 = ${15 + 12}|"></p>
   </div>
 </body>
 </html>
